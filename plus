@@ -1,17 +1,23 @@
 #!/usr/bin/python3
+# SPDX-FileCopyrightText: 2022 Hikaru Maeda
+# SPDX-License-Identifier: BSD-3-Clause
 import sys
-ans = 0.0
 
-for line in sys.stdin:
+def tonum(s):
     try:
-        ans += int(line)
+        return int(s)
     except:
-        ans +=float(line)
+        return float(s)
 
-print(ans, end = " ")
+ans = 0
+for line in sys.stdin:
+    ans += tonum(line)
 
-if ans != 0:
-    if ans%2 == 0:
-        print("答えは偶数です")
-    else:
-        print("答えは奇数です")
+print(ans)
+#print(ans, end = " ")
+
+#if ans != 0:
+    #if ans%2 == 0:
+        #print("答えは偶数です")
+    #else:
+        #print("答えは奇数です")

@@ -6,6 +6,12 @@ for line in sys.stdin:
     try:
         ans += int(line)
     except:
-        ans += float(line)
+        ans +=float(line)
 
-print(ans)
+print(ans, end = " ")
+
+if ans != 0:
+    if ans%2 == 0:
+        print("答えは偶数です")
+    else:
+        print("答えは奇数です")

@@ -13,11 +13,10 @@ ans = 0
 for line in sys.stdin:
     ans += tonum(line)
 
-print(ans)
-#print(ans, end = " ")
+print(ans, end = "")
 
-#if ans != 0:
-    #if ans%2 == 0:
-        #print("答えは偶数です")
-    #else:
-        #print("答えは奇数です")
+if ans != 0:
+    if ans%2 == 0:
+        print("even")
+    else:
+        print("odd")

@@ -1,4 +1,4 @@
-#!/bin/bash -xv
+#!/bin/bash
 #SPDX-FileCopyrightText: 2022 Ikuo Shige                                                         
 #SPDX-License-Identifier: BSD-3-Clause
 
@@ -10,7 +10,7 @@ ng (){
 res=0
 ### I/O TEST ###
 out=$(seq 5 | ./plus)
-[ "${out}" = 15 ] || ng ${LINENO}
+[ "${out}" = 15"odd" ] || ng ${LINENO}
 
 ### STRANGE INPUT ###
 out=$(echo あ | ./plus)

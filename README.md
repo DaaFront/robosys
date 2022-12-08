@@ -43,11 +43,10 @@ $seq 5 | ./plus
 15odd
 ```
 
-# テスト環境
+# 動作確認済み環境
 * Ubuntu 22.04.1 LTS
 
-* Python
-    3.7~3.10
+* Python  3.7~3.10
 
 # LICENSE
 
